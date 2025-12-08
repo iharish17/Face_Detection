@@ -2,15 +2,26 @@
 <html>
 <head>
     <title>Face & Gender Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h2>Live Webcam Detection</h2>
-    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <div class="container">
+        <h1>Face & Gender Detection</h1>
 
-    <h2>Upload Image</h2>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*">
-        <button type="submit">Upload</button>
-    </form>
+        <section class="webcam-section">
+            <h2>Live Webcam Detection</h2>
+            <div class="video-wrapper">
+                <img src="{{ url_for('video_feed') }}" width="640" height="480">
+            </div>
+        </section>
+
+        <section class="upload-section">
+            <h2>Upload Image</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" class="file-input">
+                <button type="submit" class="btn">Upload</button>
+            </form>
+        </section>
+    </div>
 </body>
 </html>
