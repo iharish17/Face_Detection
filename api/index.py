@@ -6,10 +6,10 @@ import os
 app = Flask(__name__)
 
 # Paths to models
-face_proto = r"C:\Face Detection\deploy.prototxt"
-face_model = r"C:\Face Detection\res10_300x300_ssd_iter_140000.caffemodel"
-gender_proto = r"C:\Face Detection\gender_deploy.prototxt"
-gender_model = r"C:\Face Detection\gender_net.caffemodel"
+face_proto = "models/deploy.prototxt"
+face_model = "models/res10_300x300_ssd_iter_140000.caffemodel"
+gender_proto = "models/gender_deploy.prototxt"
+gender_model = "models/gender_net.caffemodel"
 
 # Load networks
 face_net = cv2.dnn.readNetFromCaffe(face_proto, face_model)
