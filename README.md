@@ -63,7 +63,3 @@ face-detection/
 
 **Harish Kumar**  
 [GitHub](https://github.com/iharish17) • [LinkedIn](https://linkedin.com/in/harishk18)
-
-## 📄 License
-
-This project is licensed under the MIT License.
